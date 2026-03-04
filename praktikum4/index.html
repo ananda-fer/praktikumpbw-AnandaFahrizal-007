@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di Website Sederhana</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Tentang</a></li>
+            <li><a href="#">Layanan</a></li>
+            <li><a href="#">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section class="content">
+            <h2>Formulir Pendaftaran</h2>
+            <form action="" method="get" enctype="multipart/form-data" onsubmit="alert('Selamat Anda telah Daftar')">
+                Silahkan isi formulir di bawah ini untuk mendaftar.<br><br>
+                <b>Nama Lengkap:</b> <br>
+                <input type="text" name="nama" required style="width: 100%; padding: 8px;">
+                <br><br>
+
+                <b>Email:</b><br>
+                <input type="email" name="email" required style="width: 100%; padding: 8px;">
+                <br><br>
+
+                <b>Password:</b><br>
+                <input type="password" name="password" required style="width: 100%; padding: 8px;">
+                <br>
+                <hr style="border: 0.5px solid #ccc; margin: 10px 0;">
+
+                <b>Jenis Kelamin:</b><br>
+                <table>
+                    <tr>
+                        <td style="padding-bottom: 10px;"><b>Laki-laki</b></td><br>
+                        <td style="padding-bottom: 10px; width: 80%;"></td> <td style="padding-bottom: 10px;"><input type="radio" name="kelamin" value="L" required></td>
+                    </tr>
+                    <tr>
+                        <td><b>Perempuan</b></td>
+                        <td></td> <td><input type="radio" name="kelamin" value="P" required></td>
+                    </tr>
+                </table>
+                <hr style="border: 0.5px solid #ccc; margin: 10px 0;">
+
+                <b>Hobi:</b><br>
+                <table>
+                    <tr>
+                        <td style="padding-bottom: 10px;"><b>Musik</b></td><br>
+                        <td style="width: 447px;"></td> 
+                        <td style="padding-bottom: 10px;"><input type="checkbox" name="hobi" value="musik"></td>
+                    </tr>
+                    <tr>
+                        <td style="padding-bottom: 10px;"><b>Olahraga</b></td>
+                        <td></td>
+                        <td style="padding-bottom: 10px;"><input type="checkbox" name="hobi" value="olahraga"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Membaca</b></td>
+                        <td></td>
+                        <td><input type="checkbox" name="hobi" value="membaca"></td>
+                    </tr>
+                </table>
+
+                <hr style="border: 0.5px solid #ccc; margin: 15px 0;">
+
+                <b>Pilih Kota:</b>
+                <select name="Kota" required style="width: 100%; padding: 8px; font-weight: bold;">
+                    <option value="1">Jakarta</option>
+                    <option value="2">Karawang</option>
+                    <option value="3">Bandung</option>
+                </select>
+                <br>
+                <hr style="border: 0.5px solid #ccc; margin: 15px 0;">
+
+                <b>Pesan Tambahan:</b><br>
+                <textarea name="pesan" rows="6" style="width: 100%;" placeholder="Tulis pesan di sini..."></textarea>
+                <br><br>
+
+                <button class="btn" style="width: 100%; font-weight: bold;">Kirim</button>
+            </form>
+        </section>
+
+        <aside class="sidebar">
+            <h2>Sidebar</h2>
+            <p>Bagian sidebar dapat berisi tautan, iklan, atau informasi tambahan.</p>
+        </aside>
+    </div>
+</body>
+</html>
