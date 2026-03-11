@@ -1,0 +1,126 @@
+*{
+    box-sizing:border-box
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #111;
+    margin: 0;
+    padding: 20px;
+}
+.wrap{
+    max-width: 600px;
+    margin: 24px auto;
+}
+
+h1{
+    font-size:20px;
+    margin:0 0 8px
+}
+
+.subtitle, .note{
+    color:#555;
+    margin:0 0 12px
+}
+
+label{
+    display:block;
+    margin:10px 0 4px;
+    font-size:14px
+}
+
+input[type="text"], input[type="number"]{
+    width:100%;
+    padding:8px;
+    border:1px solid #ccc;
+    border-radius:4px;
+    font-size:14px;
+}
+.actions{
+    margin-top:12px;
+    text-align:left
+}
+
+button#cekBtn{
+    padding:8px 12px;
+    font-size:14px;
+    border-radius:4px;
+    border:1px solid #007bff;
+    background:#007bff;
+    color:#fff;
+    cursor:pointer;
+}
+
+button#cekBtn:active{
+    transform:translateY(1px)
+}
+
+.results-area{
+    margin-top:14px
+}
+
+.card{
+    border:1px solid #ddd;
+    padding:10px;
+    border-radius:4px;
+    background:#ffffff
+}
+
+.card.result{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.user{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.info{
+    display:flex;
+    flex-direction:column;
+}
+
+.info .name{
+    font-weight:600;
+}
+
+.info .nim{
+    font-size:0.9rem;
+    color:#555;
+}
+
+.card.error{
+    border-color:#f5c6cb;
+    background:#f8d7da;
+    color:#721c24
+}
+
+.avatar{
+    width:40px;height:40px;
+    border-radius:6px;
+    background:#ddd;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:700
+}
+
+.grade{
+    display:inline-block;
+    padding:8px 15px;
+    border-radius:6px;
+    background:#eee;
+    margin-left:8px;
+    font-weight:700;
+    text-align:center;
+    min-width:36px;
+    flex-shrink:0;
+}
+
+@media (min-width:600px){
+    .wrap{padding:12px}
+}
