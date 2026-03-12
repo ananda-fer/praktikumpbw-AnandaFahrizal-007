@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Nilai Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="wrap">
+        <header class="site-header">
+            <h1>Cek Nilai Mahasiswa</h1>
+            <p class="subtitle">Masukkan data sesuai ketentuan</p>
+        </header>
+
+        <section class="card form-card">
+            <div class="field">
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" placeholder="Nama lengkap">
+            </div>
+            <div class="field">
+                <label for="nim">NIM</label>
+                <input type="text" id="nim" placeholder="contoh: 2410631170007">
+            </div>
+            <div class="field">
+                <label for="nilai">Nilai (0 - 100)</label>
+                <input type="number" id="nilai" placeholder="85">
+            </div>
+
+            <div class="actions">
+                <button id="cekBtn">Cek Nilai</button>
+            </div>
+        </section>
+
+        <section id="hasil" class="results-area" aria-live="polite"></section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
