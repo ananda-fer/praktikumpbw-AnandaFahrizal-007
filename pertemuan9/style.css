@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #f5f5f0;
+    color: #2c2c2a;
+    display: flex;
+    min-height: 100vh;
+}
+
+.menu {
+    width: 220px;
+    min-height: 100vh;
+    background-color: #ffffff;
+    border-right: 1px solid #d3d1c7;
+    padding: 2rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu li a,
+.menu a {
+    display: block;
+    padding: 0.6rem 1.25rem;
+    color: #444441;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    border-left: 3px solid transparent;
+    transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.menu li a:hover,
+.menu a:hover {
+    background-color: #f1efe8;
+    border-left-color: #7f77dd;
+    color: #3c3489;
+}
+
+.menu li a:active,
+.menu a:active {
+    background-color: #e8e6df;
+    border-left-color: #534ab7;
+    color: #26215c;
+}
+
+.page {
+    margin-left: 220px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3rem 2rem;
+    min-height: 100vh;
+}
+
+.card {
+    width: 100%;
+    max-width: 520px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #d3d1c7;
+    padding: 2rem 2.25rem;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #2c2c2a;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid #e8e6df;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+}
+
+input[type="number"],
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 0.55rem 0.9rem;
+    font-size: 14px;
+    font-family: inherit;
+    color: #2c2c2a;
+    background-color: #fafaf8;
+    border: 1px solid #b4b2a9;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+input[type="number"]:focus,
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #7f77dd;
+    box-shadow: 0 0 0 3px rgba(127, 119, 221, 0.15);
+    background-color: #ffffff;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+button[type="submit"] {
+    align-self: flex-start;
+    padding: 0.55rem 1.4rem;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: inherit;
+    color: #3c3489;
+    background-color: #eeedfe;
+    border: 1px solid #afa9ec;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s, transform 0.1s;
+}
+
+button[type="submit"]:hover {
+    background-color: #cecbf6;
+    border-color: #7f77dd;
+}
+
+button[type="submit"]:active {
+    background-color: #afa9ec;
+    transform: scale(0.98);
+}
+
+.result {
+    background-color: #f1efe8;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    border-left: 3px solid #7f77dd;
+    color: #3c3489;
+    font-size: 14px;
+    margin-top: 0.25rem;
+    line-height: 1.7;
+}
+
