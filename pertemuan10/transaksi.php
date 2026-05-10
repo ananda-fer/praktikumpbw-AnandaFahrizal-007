@@ -1,4 +1,5 @@
 <?php
+include 'proteksi.php';
 include 'koneksi_db.php';
 include 'nav.php';
 

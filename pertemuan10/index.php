@@ -1,3 +1,4 @@
+<?php include 'proteksi.php'; ?>
 <?php include 'proses_index.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
